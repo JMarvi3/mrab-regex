@@ -35,8 +35,6 @@ setup(
     python_requires='>=3.7',
 
     package_dir={'regex': 'regex_3'},
-    py_modules=['regex.__init__', 'regex.regex', 'regex._regex_core',
-     'regex.test_regex'],
-    ext_modules=[Extension('regex._regex', [join('regex_3', '_regex.c'),
-      join('regex_3', '_regex_unicode.c')])],
+    py_modules=['regex.__init__', 'regex.regex'],
+    ext_modules=[Extension('regex._regex', [join('regex_3', '_regex.c')])],
 )
