@@ -2,14 +2,11 @@
 from setuptools import setup, Extension
 from os.path import join
 
-with open('README.rst', encoding='utf-8') as file:
-    long_description = file.read()
-
 setup(
     name='regex',
     version='2023.12.25',
     description='Alternative regular expression module, to replace re.',
-    long_description=long_description,
+    long_description='Long description here.',
     long_description_content_type='text/x-rst',
     author='Matthew Barnett',
     author_email='regex@mrabarnett.plus.com',

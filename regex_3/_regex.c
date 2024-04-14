@@ -87,10 +87,5 @@ static struct PyModuleDef regex_module = {
 
 /* Initialises the module. */
 PyMODINIT_FUNC PyInit__regex(void) {
-
-    PyObject *m;
-    m = PyModule_Create(&regex_module);
-    if (!m)
-        return NULL;
-    return m;
+    return PyModule_Create(&regex_module);
 }
